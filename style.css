@@ -45,6 +45,7 @@ body{
 }
 .main_text{
     display: flex;
+    flex-wrap: wrap;
 }
 @media(max-width: 900px){
     #user_pro i{
@@ -71,7 +72,12 @@ body{
 .nav a:hover{
     color: white;
 }
-
+.sidebar_menu{
+    flex: -3%;
+}
+.main_text{
+    flex: 50%;
+}
 #sidebar {
     background:white;
     color: black;
@@ -187,28 +193,33 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
 a[aria-expanded="true"]::before {
     content: '\e260';
 }
-
-
+#sidebar.active #homeSubmenu,#sidebar.active #homeSubmenu{
+    display: none !important;
+}
+#sidebar{
+    width: 220px;
+}
 ul a {
     font-size: 0.9em !important;
     padding-left: 10px ;
 }
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 80px;
-        max-width: 80px;
+        /* min-width: 80px;
+        max-width: 80px; */
         text-align: center;
         margin-left: 0px !important ;
+        width: 220px;
     }
-    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    /* a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
         top: auto;
         bottom: 5px;
         right: 50%;
         -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
         transform: translateX(50%);
-    }
-    #sidebar.active {
+    } */
+    /* #sidebar.active {
         margin-left: 0 !important;
     }
 
@@ -228,8 +239,8 @@ ul a {
 
     #sidebar ul ul a {
         padding: 10px !important;
-    }
-
+    } */
+/* 
     #sidebar ul li a i {
         font-size: 1.3em;
     }
@@ -238,7 +249,7 @@ ul a {
     }
     #sidebarCollapse span {
         display: none;
-    }
+    } */
     
 }
 /* ********************************************* */
@@ -248,6 +259,15 @@ ul a {
     border: 1px solid rgb(228, 224, 224);
     box-shadow: 3px 3px rgb(219, 215, 215);
     width: auto;
+    flex: 20%;
+}
+.infor{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(228, 224, 224);
+    box-shadow: 3px 3px rgb(219, 215, 215);
+    width: auto;
+   
 }
 h1{
     padding: 10px;
