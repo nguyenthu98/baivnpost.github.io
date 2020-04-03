@@ -128,7 +128,7 @@ body{
     color: white;
 }
 #sidebar.active ul li a {
-    padding: 20px 10px;
+    padding: 10px 5px;
     text-align: center;
     font-size: 0.85em;
 }
@@ -139,15 +139,21 @@ body{
     font-size: 1.8em;
     margin-bottom: 5px;
 }
+.submenu a i{
+    font-size: 1.2em !important;
+    text-align: center;
+    padding: 0px !important;
+    padding-left: 20px !important;
+}
 .sidebar_menu button{
     border: none;
     box-shadow: none;
     outline: none;
     background-color: white;
 }
-#sidebar.active .i_show ,#sidebar.active .i_show,#sidebar.active .i_show_page{
+/* #sidebar.active .i_show ,#sidebar.active .i_show,#sidebar.active .i_show_page{
     display: none;
-}
+} */
 #sidebar.active ul ul a {
     padding: 10px !important;
 }
@@ -192,9 +198,6 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
 }
 a[aria-expanded="true"]::before {
     content: '\e260';
-}
-#sidebar.active #homeSubmenu,#sidebar.active #homeSubmenu{
-    display: none !important;
 }
 #sidebar{
     width: 220px;
